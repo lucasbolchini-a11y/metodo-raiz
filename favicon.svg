@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="22" fill="#1a2420"/>
+  
+  <!-- Letra M estilizada -->
+  <text x="50%" y="58%" text-anchor="middle" fill="#f6f2eb"
+        font-family="Fraunces, serif"
+        font-size="52"
+        font-weight="500">
+    M
+  </text>
+
+  <!-- Punto raíz -->
+  <circle cx="78" cy="25" r="5" fill="#c46542"/>
+</svg>
