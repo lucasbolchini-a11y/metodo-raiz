@@ -20,9 +20,25 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
+// ---------- Middlewares ----------
+// CORS abierto — acepta requests desde cualquier origen (Vercel, local, etc.)
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type']
+}));
+app.options('*', cors()); // responde el preflight de cualquier ruta
 app.use(express.json());
 
+// ---------- Validacion de variables de entorno ----------
+const missingEnvVars = ['GMAIL_USER', 'GMAIL_APP_PASSWORD', 'MAIL_DESTINO'].filter(
+  (key) => !process.env[key]
+);
+if (missingEnvVars.length > 0) {
+  console.error('⚠️  FALTA CONFIGURAR EN RENDER > Environment:', missingEnvVars.join(', '));
+}
+
+// ---------- Configuracion de Gmail ----------
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -117,7 +133,15 @@ const mailTexts = {
 
 // ---------- Ruta de prueba ----------
 app.get('/', (req, res) => {
-  res.send('Servidor Metodo Raiz funcionando correctamente');
+  res.json({
+    status: 'ok',
+    message: 'Servidor Metodo Raiz funcionando',
+    env: {
+      gmail_user: process.env.GMAIL_USER ? '✓ configurado' : '✗ FALTA',
+      gmail_pass: process.env.GMAIL_APP_PASSWORD ? '✓ configurado' : '✗ FALTA',
+      mail_destino: process.env.MAIL_DESTINO ? '✓ configurado' : '✗ FALTA'
+    }
+  });
 });
 
 // ---------- Ruta del formulario ----------
@@ -226,7 +250,7 @@ app.post('/api/reservar', async (req, res) => {
             <p style="font-size: 15px; line-height: 1.6; color: #4a544d; margin: 0 0 28px;">
               ${t.doubtMsg}
             </p>
-            <a href="https://wa.me/${telefono.replace(/[^0-9]/g, '')}" style="display: inline-block; background: #25d366; color: white; text-decoration: none; padding: 12px 24px; border-radius: 8px; font-weight: 600; font-size: 15px;">
+            <a href="https://wa.me/13055550000" style="display: inline-block; background: #25d366; color: white; text-decoration: none; padding: 12px 24px; border-radius: 8px; font-weight: 600; font-size: 15px;">
               ${t.waButton}
             </a>
             <p style="font-size: 16px; line-height: 1.6; color: #4a544d; margin-top: 36px;">
@@ -245,15 +269,17 @@ app.post('/api/reservar', async (req, res) => {
 
     guardarReserva(email);
 
-    console.log('Mails enviados correctamente (idioma:', lang, ')');
+    console.log('✓ Mails enviados correctamente (idioma:', lang, ') a:', email);
     res.json({ ok: true, message: 'Reserva recibida' });
 
   } catch (error) {
-    console.error('Error al enviar mail:', error);
+    console.error('✗ ERROR al enviar mail:', error.message);
+    console.error('Detalle:', error);
     res.status(500).json({ ok: false, error: 'No pudimos procesar la reserva' });
   }
 });
 
+// ---------- Prende el servidor ----------
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`✓ Servidor corriendo en http://localhost:${PORT}`);
 });
