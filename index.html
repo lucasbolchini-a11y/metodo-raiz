@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entrenamiento funcional en grupos de 6 personas en Brickell, Miami. Primera clase gratis. Sin experiencia previa necesaria." />
+  <title>Método Raíz — Entrenamiento funcional en Brickell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark">◐</span>
+        <span class="logo-text">Método <em>Raíz</em></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#como-funciona" data-i18n="nav_how">Cómo funciona</a>
+        <a href="#planes" data-i18n="nav_plans">Planes</a>
+        <a href="#entrenador" data-i18n="nav_trainer">Entrenador</a>
+        <a href="#testimonios" data-i18n="nav_stories">Historias</a>
+      </nav>
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" aria-label="Change language">
+          <span class="lang-toggle-label" id="langLabel">EN</span>
+        </button>
+        <a href="#reservar" class="btn btn-sm" data-i18n="nav_cta">Primera clase gratis</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Brickell · Miami</span>
+          <h1 data-i18n="hero_title">
+            Tu primera clase, <em>gratis</em> y sin experiencia previa.
+          </h1>
+          <p class="lead" data-i18n="hero_lead">
+            Grupos de 6 personas máximo. Mateo te guía desde cero, adapta cada ejercicio a tu nivel y te asegura de no lastimarte. Venís, entrenás, te vas sintiéndote bien.
+          </p>
+          <div class="hero-ctas">
+            <a href="#reservar" class="btn btn-primary" data-i18n="hero_cta">Reservar clase gratis</a>
+            <a href="https://wa.me/13055550000?text=Hola,%20quiero%20info%20sobre%20la%20clase%20de%20prueba" target="_blank" rel="noopener" class="btn-ghost">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.3 0-.5s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+              <span data-i18n="hero_wa">Preguntá por WhatsApp</span>
+            </a>
+          </div>
+          <ul class="hero-proof">
+            <li><strong>+200</strong> <span data-i18n="proof_1">personas arrancaron acá</span></li>
+            <li><strong>6</strong> <span data-i18n="proof_2">personas máximo por clase</span></li>
+            <li><strong data-i18n="proof_3_num">1ra clase</strong> <span data-i18n="proof_3">100% gratis</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card hero-card--main">
+            <div class="hero-card-tag" data-i18n="card_tag">Hoy · 7:00 AM</div>
+            <div class="hero-card-title" data-i18n="card_title">Funcional para principiantes</div>
+            <div class="hero-card-meta">
+              <span class="dot"></span> <span data-i18n="card_meta">Quedan 2 lugares</span>
+            </div>
+          </div>
+          <div class="hero-card hero-card--small">
+            <div class="hero-card-sub" data-i18n="card_sub">Movilidad & recuperación</div>
+            <div class="hero-card-title-sm">18:00</div>
+          </div>
+          <div class="hero-blob"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span data-i18n="mq_1">Primera clase gratis</span><span>◦</span>
+        <span data-i18n="mq_2">Grupos de 6 personas</span><span>◦</span>
+        <span data-i18n="mq_3">Sin experiencia previa</span><span>◦</span>
+        <span>Brickell, Miami</span><span>◦</span>
+        <span data-i18n="mq_5">Entrenamiento funcional</span><span>◦</span>
+        <span data-i18n="mq_1b">Primera clase gratis</span><span>◦</span>
+        <span data-i18n="mq_2b">Grupos de 6 personas</span><span>◦</span>
+        <span data-i18n="mq_3b">Sin experiencia previa</span><span>◦</span>
+        <span>Brickell, Miami</span><span>◦</span>
+        <span data-i18n="mq_5b">Entrenamiento funcional</span><span>◦</span>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section class="how" id="como-funciona">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="how_eyebrow">Empezar es fácil</span>
+        <h2 data-i18n="how_title">Tres pasos. <em>Cero</em> vueltas.</h2>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <div class="step-num">01</div>
+          <h3 data-i18n="step1_title">Reservás tu clase gratis</h3>
+          <p data-i18n="step1_desc">Completás el formulario en 60 segundos. Te confirmamos por WhatsApp ese mismo día.</p>
+        </article>
+        <article class="step">
+          <div class="step-num">02</div>
+          <h3 data-i18n="step2_title">Venís y entrenás</h3>
+          <p data-i18n="step2_desc">Mateo adapta cada ejercicio a tu nivel. Si hace años que no entrenás, perfecto — empezamos por ahí.</p>
+        </article>
+        <article class="step">
+          <div class="step-num">03</div>
+          <h3 data-i18n="step3_title">Seguís si querés</h3>
+          <p data-i18n="step3_desc">Clase suelta, pack de 8 o membresía mensual. Sin contratos ni letra chica. Vos elegís.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PLANES -->
+    <section class="plans" id="planes">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="plans_eyebrow">Planes</span>
+        <h2 data-i18n="plans_title">Sin contratos. <em>Sin presión.</em></h2>
+      </div>
+
+      <div class="plan-grid">
+        <article class="plan">
+          <div class="plan-top">
+            <h3 data-i18n="plan1_name">Clase suelta</h3>
+            <p class="plan-sub" data-i18n="plan1_sub">Probá una vez, sin comprometerte.</p>
+          </div>
+          <div class="plan-price"><span class="currency">$</span>25<span class="per" data-i18n="plan1_per">/clase</span></div>
+          <ul class="plan-list">
+            <li data-i18n="plan1_f1">1 clase funcional</li>
+            <li data-i18n="plan1_f2">Grupo de máximo 6</li>
+            <li data-i18n="plan1_f3">Evaluación inicial incluida</li>
+          </ul>
+          <a href="#reservar" class="btn btn-outline" data-i18n="plan1_cta">Quiero esta clase</a>
+        </article>
+
+        <article class="plan plan--featured">
+          <div class="plan-flag" data-i18n="plan2_flag">Más elegido</div>
+          <div class="plan-top">
+            <h3 data-i18n="plan2_name">Pack 8 clases</h3>
+            <p class="plan-sub" data-i18n="plan2_sub">El punto ideal para crear el hábito.</p>
+          </div>
+          <div class="plan-price"><span class="currency">$</span>160<span class="per">/pack</span></div>
+          <ul class="plan-list">
+            <li data-i18n="plan2_f1">8 clases funcionales</li>
+            <li data-i18n="plan2_f2">Válido por 5 semanas</li>
+            <li data-i18n="plan2_f3">Seguimiento personalizado</li>
+            <li data-i18n="plan2_f4">Sesión de movilidad incluida</li>
+          </ul>
+          <a href="#reservar" class="btn btn-primary" data-i18n="plan2_cta">Empezar con el pack</a>
+        </article>
+
+        <article class="plan">
+          <div class="plan-top">
+            <h3 data-i18n="plan3_name">Membresía mensual</h3>
+            <p class="plan-sub" data-i18n="plan3_sub">Clases ilimitadas. El precio más bajo por clase.</p>
+          </div>
+          <div class="plan-price"><span class="currency">$</span>220<span class="per" data-i18n="plan3_per">/mes</span></div>
+          <ul class="plan-list">
+            <li data-i18n="plan3_f1">Clases ilimitadas</li>
+            <li data-i18n="plan3_f2">Prioridad en horarios</li>
+            <li data-i18n="plan3_f3">Plan de progreso mensual</li>
+          </ul>
+          <a href="#reservar" class="btn btn-outline" data-i18n="plan3_cta">Quiero la membresía</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOBRE EL ENTRENADOR -->
+    <section class="trainer" id="entrenador">
+      <div class="trainer-grid">
+        <div class="trainer-photo">
+          <div class="photo-frame">
+            <div class="photo-placeholder">
+              <svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <defs>
+                  <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#c9d6c2"/>
+                    <stop offset="100%" stop-color="#889a82"/>
+                  </linearGradient>
+                </defs>
+                <rect width="200" height="240" fill="url(#g1)"/>
+                <circle cx="100" cy="90" r="34" fill="#f5f1ea" opacity="0.9"/>
+                <path d="M40 240 C 40 170, 160 170, 160 240 Z" fill="#f5f1ea" opacity="0.9"/>
+              </svg>
+            </div>
+          </div>
+          <div class="photo-badge">
+            <span data-i18n="badge_label">Certificado</span>
+            <strong>NASM-CPT</strong>
+          </div>
+        </div>
+        <div class="trainer-copy">
+          <span class="eyebrow" data-i18n="trainer_eyebrow">Tu entrenador</span>
+          <h2 data-i18n="trainer_title">Hola, soy <em>Mateo</em>.</h2>
+          <p data-i18n="trainer_p1">
+            Llevo <strong>12 años</strong> trabajando con personas que nunca habían entrenado — o que lo intentaron y lo dejaron. La mayoría llega con miedo. Casi todos siguen después de la primera clase.
+          </p>
+          <p data-i18n="trainer_p2">
+            Creé Método Raíz porque los gimnasios grandes te pierden entre la gente. Acá somos pocos, te conozco por tu nombre, sé cómo te movés y ajusto cada clase para que progresés de verdad.
+          </p>
+          <div class="trainer-stats">
+            <div><strong>12</strong><span data-i18n="stat_1">años de experiencia</span></div>
+            <div><strong>+200</strong><span data-i18n="stat_2">alumnos desde cero</span></div>
+            <div><strong>6</strong><span data-i18n="stat_3">personas por clase</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonials" id="testimonios">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="testi_eyebrow">Lo que dicen</span>
+        <h2 data-i18n="testi_title">Gente que también <em>arrancó de cero</em>.</h2>
+      </div>
+      <div class="testi-grid">
+        <blockquote class="testi">
+          <p data-i18n="testi_1">"Llegué sin haber entrenado nunca. A las tres semanas ya tenía rutina y me sentía con energía todo el día. Mateo hace que sea fácil."</p>
+          <footer>— Laura M., 34</footer>
+        </blockquote>
+        <blockquote class="testi">
+          <p data-i18n="testi_2">"Probé gimnasios grandes y siempre los dejaba. Acá somos pocos y se nota. Me acuerdan del nombre, corrigen postura. Es completamente diferente."</p>
+          <footer>— Diego R., 41</footer>
+        </blockquote>
+        <blockquote class="testi">
+          <p data-i18n="testi_3">"Tenía miedo de lesionarme. Empezamos despacio, con movilidad. Hoy entreno cosas que hace un año no me hubiera imaginado."</p>
+          <footer>— Carla P., 29</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CTA / RESERVAR -->
+    <section class="reserve" id="reservar">
+      <div class="reserve-grid">
+        <div class="reserve-copy">
+          <span class="eyebrow" data-i18n="reserve_eyebrow">Tu primera clase</span>
+          <h2 data-i18n="reserve_title">Reservá <em>gratis</em> ahora.</h2>
+          <p data-i18n="reserve_desc">Completá el formulario y te confirmamos el horario por WhatsApp hoy mismo. Sin tarjeta, sin compromiso de ningún tipo.</p>
+
+          <ul class="reserve-info">
+            <li>
+              <strong data-i18n="info_hours_label">Horarios</strong>
+              <span data-i18n="info_hours">Lun a Sáb · 6–10 AM y 5–9 PM</span>
+            </li>
+            <li>
+              <strong data-i18n="info_address_label">Dirección</strong>
+              <span>Brickell, Miami · FL</span>
+            </li>
+            <li>
+              <strong data-i18n="info_wa_label">¿Preferís escribir primero?</strong>
+              <a href="https://wa.me/13055550000" target="_blank" rel="noopener" data-i18n="info_wa_link">Escribinos por WhatsApp →</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="reserve-form" id="reserveForm" novalidate>
+          <div class="field">
+            <label for="nombre" data-i18n="form_name">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required data-i18n-placeholder="form_name_ph" placeholder="Cómo te llamás" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+          </div>
+          <div class="field">
+            <label for="telefono" data-i18n="form_phone">WhatsApp</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="+1 305 ..." />
+          </div>
+          <div class="field">
+            <label for="horario" data-i18n="form_time">¿Cuándo querés venir?</label>
+            <select id="horario" name="horario" required>
+              <option value="" disabled selected data-i18n="form_time_ph">Elegí un horario</option>
+              <option data-i18n="form_time_am" value="morning">Mañana (6–10 AM)</option>
+              <option data-i18n="form_time_pm" value="afternoon">Tarde (5–9 PM)</option>
+              <option data-i18n="form_time_any" value="any">Me da igual</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="nivel" data-i18n="form_level">¿Entrenás actualmente?</label>
+            <select id="nivel" name="nivel">
+              <option data-i18n="form_level_1" value="never">No, nunca entrené</option>
+              <option data-i18n="form_level_2" value="long_ago">Entrenaba, hace tiempo que no</option>
+              <option data-i18n="form_level_3" value="sometimes">De vez en cuando</option>
+              <option data-i18n="form_level_4" value="regular">Sí, entreno regularmente</option>
+            </select>
+          </div>
+          <!-- Campo oculto para el idioma -->
+          <input type="hidden" id="idioma" name="idioma" value="es" />
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="form_submit">Reservar mi clase gratis →</button>
+          <p class="form-note" data-i18n="form_note">Te respondemos por WhatsApp en menos de 2 horas.</p>
+          <div class="form-success" id="formSuccess" hidden>
+            <strong>¡Listo!</strong> Te escribimos por WhatsApp en un rato. Gracias por confiar.
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">◐</span>
+        <span>Método <em>Raíz</em></span>
+      </div>
+      <p>Brickell, Miami · FL</p>
+      <p class="footer-small" data-i18n="footer">© 2026 Método Raíz. Hecho con paciencia.</p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING -->
+  <a href="https://wa.me/13055550000?text=Hola,%20quiero%20info%20sobre%20la%20clase%20de%20prueba" target="_blank" rel="noopener" class="wa-float" aria-label="Escribir por WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.3 0-.5s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
