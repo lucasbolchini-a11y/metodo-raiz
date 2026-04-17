@@ -290,7 +290,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 // ============================================
 // FORMULARIO CON BACKEND REAL
 // ============================================
-const API_URL = 'http://localhost:3000/api/reservar';
+const API_URL = 'https://metodo-raiz.onrender.com/api/reservar';
 
 const form = document.getElementById('reserveForm');
 const success = document.getElementById('formSuccess');
